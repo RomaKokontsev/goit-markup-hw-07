@@ -263,15 +263,19 @@ img {
   padding: 0px;
 }
 
-.strengths-container .item {
-  width: 270px;
-}
-
-.strengths-container .item:not(:last-child) {
+.strengths-container .strengths-list:not(:last-child) {
   margin-right: 30px;
 }
 
-.strengths-container .item .strengths-icon {
+.strengths-item {
+  width: 270px;
+}
+
+.strengths-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.strengths-item .strengths-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +291,7 @@ img {
   margin-bottom: 30px;
 }
 
-.strengths-container .item .strengths-title {
+.strengths-item .strengths-title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -296,15 +300,11 @@ img {
   text-transform: uppercase;
 }
 
-.strengths-container .item .strengths-text {
+.strengths-item .strengths-text {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.strengths-container .strengths-list:not(:last-child) {
-  margin-right: 30px;
 }
 
 .product {
@@ -946,7 +946,7 @@ img {
   background-color: #ffffff;
 }
 
-.list {
+.samples-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,15 +956,15 @@ img {
   padding: 0px;
 }
 
-.list .list-type {
+.samples-list .list-type {
   margin-bottom: 50px;
 }
 
-.list .list-type:not(:last-child) {
+.samples-list .list-type:not(:last-child) {
   margin-right: 8px;
 }
 
-.list .type-work {
+.samples-list .type-work {
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -982,7 +982,7 @@ img {
   cursor: pointer;
 }
 
-.list .type-work:hover, .list .type-work:focus {
+.samples-list .type-work:hover, .samples-list .type-work:focus {
   background-color: #2196F3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1046,9 +1046,6 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-photo .overlay-text {
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
